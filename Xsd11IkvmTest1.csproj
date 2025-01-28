@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM" Version="8.10.3" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.8.2" />
+    <MavenReference Include="com.evolvedbinary.thirdparty.xerces:xercesImpl" Version="2.12.2.1" Classifier="xml-schema-1.1" />
+    <MavenReference Include="xml-resolver:xml-resolver" Version="1.2" />
+    <MavenReference Include="com.evolvedbinary.thirdparty.xml-apis:xml-apis" Version="1.4.02" />
+    <MavenReference Include="edu.princeton.cup:java-cup" Version="10k" />
+    <MavenReference Include="com.evolvedbinary.thirdparty.org.eclipse.wst.xml:xpath2" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="sample1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="sample1.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

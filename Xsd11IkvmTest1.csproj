@@ -10,11 +10,11 @@
   <ItemGroup>
     <PackageReference Include="IKVM" Version="8.11.0" />
     <PackageReference Include="IKVM.Maven.Sdk" Version="1.9.0" />
-    <MavenReference Include="com.evolvedbinary.thirdparty.xerces:xercesImpl" Version="2.12.2.1" Classifier="xml-schema-1.1" />
-    <MavenReference Include="xml-resolver:xml-resolver" Version="1.2" />
+    <MavenReference Include="com.evolvedbinary.thirdparty.xerces:xercesImpl" Version="2.12.2.2" Classifier="xml-schema-1.1" />
+    <!--<MavenReference Include="xml-resolver:xml-resolver" Version="1.2" />
     <MavenReference Include="com.evolvedbinary.thirdparty.xml-apis:xml-apis" Version="1.4.02" />
-    <MavenReference Include="edu.princeton.cup:java-cup" Version="10k" />
-    <MavenReference Include="com.evolvedbinary.thirdparty.org.eclipse.wst.xml:xpath2" Version="1.2.1" />
+    <MavenReference Include="edu.princeton.cup:java-cup" Version="10k" />-->
+    <MavenReference Include="com.evolvedbinary.thirdparty.org.eclipse.wst.xml:xpath2" Version="1.2.1.1" />
   </ItemGroup>
 
   <ItemGroup>

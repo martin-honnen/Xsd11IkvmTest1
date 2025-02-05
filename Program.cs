@@ -13,11 +13,15 @@ namespace Xsd11IkvmTest1
         public static SchemaFactory XercesXsd10SchemaFactory = new org.apache.xerces.jaxp.validation.XMLSchemaFactory();
         static void Main(string[] args)
         {
-            ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xercesImpl"));
+            //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xercesImpl"));
 
-            ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("java-cup"));
+            //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("java-cup"));
 
-            ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xpath2"));
+            //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xpath2"));
+            
+            //Assembly.Load("xercesImpl");
+            //Assembly.Load("java-cup");
+            Assembly.Load("xpath2");
 
             var validationResult = ValidateXmlAgainstXsd11("sample1.xml", "sample1.xsd");
 

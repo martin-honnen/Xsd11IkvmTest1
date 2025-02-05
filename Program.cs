@@ -13,6 +13,8 @@ namespace Xsd11IkvmTest1
         public static SchemaFactory XercesXsd10SchemaFactory = new org.apache.xerces.jaxp.validation.XMLSchemaFactory();
         static void Main(string[] args)
         {
+            ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xercesImpl"));
+
             ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("java-cup"));
 
             ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("xpath2"));
